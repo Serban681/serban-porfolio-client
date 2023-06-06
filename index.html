@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Serban Deaconu | Portfolio</title>
+  </head>
+  <body>
+    <section class="section" id="header">
+        <div class="section-container">
+            <h5 id="logo">Serban Deaconu</h5>
+
+            <div class="header-container">
+                <div class="header-text">
+                    <h3 class="header-title" id="header-salute">Hi</h3>
+                    <h1 class="header-title" id="header-name">I'm Serban</h1>
+                    <h2 class="header-title" id="header-role">Full-stack Developer</h2>
+
+                    <a href="https://github.com/Serban681" target="_blank">
+                        <img class="github-icon header-icon icon" src="./static/images//gihubIcon.png" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/serban-deaconu-53a4bb23a/" target="_blank">
+                        <img class="linkedin-icon header-icon icon" src="./static/images//linked-in-icon.png" />
+                    </a>
+                </div>
+
+                <div id="header-canvas-container">
+                    <canvas class="header-canvas"></canvas>
+                </div>
+                
+                <div id="header-btn-container">
+                    <button onclick="window.location='#contact-section'" class="btn" id="contact-btn">Contact</button>
+                </div> 
+            </div>    
+
+            <img id="scroll-down-cta" src='./static/images/ScrollDown.png'>
+        </div>
+    </section>
+
+    <section class="section" id="projects-section">
+        <div class="section-container" id="projects-section-container">
+        <h2 class="section-title" id="projects-section-title">Projects</h2>
+        
+        <div class="project-frame">
+            <div class="project-details">
+                <div class="decoration" id="first-project-decoration"></div>
+                <h3 class="project-title" id="first-project-title">Form Builder Website</h3>
+                <p class="project-description" id="first-project-description">
+                    &nbsp; I made this website as part of a school project for the software engineering fundamentals class.
+                </p>
+            </div>
+            
+            <div class="technologies-container">
+                <h5 class="technology first-project-technology">Next.js</h5>
+                <h5 class="technology first-project-technology">MongoDB</h5>
+                <h5 class="technology first-project-technology">tRPC</h5>
+                <h5 class="technology first-project-technology">TypeScript</h5>
+                <h5 class="technology first-project-technology">NextAuth</h5>
+                <h5 class="technology first-project-technology">Tailwind</h5>
+            </div>
+            
+            <a href="https://formik-upload.vercel.app/" target="_blank">
+                <button class="btn live-demo-btn first-project-btn">Live Demo</button>
+            </a>
+            
+            <a href="https://github.com/Serban681/Formik" target="_blank">
+                <button class="btn repo-btn first-project-btn">Repo</button>
+            </a>
+        </div>
+    
+        <div class="project-frame">
+            <div class="project-details">
+                <div class="decoration" id="second-project-decoration"></div>
+                <h3 class="project-title" id="second-project-title">Bussiness Website</h3>
+                <p class="project-description" id="second-project-description">
+                    &nbsp; My first website - Using HTML, CSS and JAVASCRIPT I put together a typical barbershop website.
+                </p>
+            </div>
+            
+            <div class="technologies-container" id="special-technologies-container">
+                <h5 class="technology second-project-technology">HTML</h5>
+                <h5 class="technology second-project-technology">CSS</h5>
+                <h5 class="technology second-project-technology">JAVASCRIPT</h5>
+            </div>
+
+            <a href="https://silver-pastelito-df6f3f.netlify.app"  target="_blank">
+                <button class="btn live-demo-btn second-project-btn">Live Demo</button>
+            </a>
+
+            <a href="https://github.com/Serban681/barber-site" target="_blank">
+                <button class="btn repo-btn second-project-btn">Repo</button>
+            </a> 
+        </div>
+        </div>
+    </section>
+
+    <section class="section" id="skills-section">
+        <div class="section-container">
+        <div class="vertical-aligner">
+            <h2 class="section-title" id="skills-title">Skills</h2>
+
+            <div id="skills-text-container">
+                <div class="decoration" id="skill-section-decoration"></div>
+                <div>
+                    <div class="skills-text">
+                        &nbsp; Most of the stuff I know was learnt from online sources.
+                    </div>
+                    <br/>
+                    <div class="skills-text">
+                        &nbsp; I’m looking forward to add more technologies to the stack, but here is what  I’ve learnt so far:
+                    </div>                   
+                </div>
+            </div>
+
+            <div class="skills-models">
+                <div class="skill-container">
+                    <div id="react-container" class="skill-name">REACT</div>
+                    <canvas class="skill-canvas"></canvas>
+                </div>
+
+                <div class="skill-container">
+                    <div id="tailwind-container" class="skill-name">TAILWIND</div>
+                    <canvas class="skill-canvas"></canvas>
+                </div>
+
+                <div class="skill-container">
+                    <div id="nodejs-container" class="skill-name">NODE JS</div>
+                    <canvas class="skill-canvas"></canvas>
+                </div>
+
+                <div class="skill-container">
+                    <div id="express-container" class="skill-name">EXPRESS</div>
+                    <canvas class="skill-canvas"></canvas>
+                </div>
+
+                <div class="skill-container">
+                    <div id="mongodb-container" class="skill-name">MONGO DB</div>
+                    <canvas class="skill-canvas"></canvas>
+                </div>
+                
+                <div class="skill-container">
+                    <div id="typescript-container" class="skill-name">TYPESCRIPT</div>
+                    <canvas class="skill-canvas"></canvas>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section" id="about-me-section">
+        <div class="section-container">
+            <div class="vertical-aligner" id="about-me-vertical-aligner">
+                <h2 class="section-title" id="about-me-title">About Me</h2>
+
+                <div class="about-me-container">
+                    <div class="about-me-text">
+                        <div class="decoration" id="about-me-decoration"></div>
+                        <div class="about-me-paragraph">
+                            &nbsp; I’m currently a student, studying computer science at Polytechnic University of Timisoara, Romania.
+                        </div>
+                        <br/>
+                        <div class="about-me-paragraph">
+                            &nbsp; Being passionate about video games, I began my programming journey at 15 years old with the main goal of making my dream video games. In the end I found web development a more interesting field to work in.
+                        </div>
+                        <br/>
+                        <div class="about-me-paragraph">
+                            &nbsp; When I’m not studying, I enjoy working out or listening to music.
+                        </div>
+                    </div>   
+
+                    <div class="about-me-canvas-container">
+                        <canvas class="about-me-canvas"></canvas>
+                    </div>   
+                </div>  
+                        
+            </div>   
+        </div>
+    </section>
+
+    <section class="section" id="contact-section">
+        <div class="section-container">
+            <div class="vertical-aligner">
+                <h2 class="section-title" id="contact-title">Contact Me</h2>
+                
+                <div class="contact-text-container">
+                    <div class="decoration" id="contact-decoration"></div>
+                    <div class="contact-paragraph">
+                        &nbsp; I’m interested in internship opportunities.
+                    </div>                      
+                    <br/>
+                    <div class="contact-paragraph">
+                        &nbsp; However if you feel like there’s anything else I can help you with feel free to use the form below.
+                    </div>  
+                </div>
+            
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-label" for="name">Name:</div><br/>
+                            <input id="name-input" class="form-input" type="text" name="name"/><br/>
+                            <div class="form-label" for="email">Email:</div><br/>
+                            <input id="email-input" class="form-input" type="text" name="email"/><br/>
+                            <div class="form-label" for="message">Message:</div><br/>
+                            <textarea class="form-input" id="message-input" type="text" name="message"></textarea><br/>
+                            <h6 id="client-msg">Message could not be sent</h6>
+                            <button type="button" class="btn" id="bottom-contact-btn">Submit</button>
+                        </form>
+                        <a href="https://github.com/Serban681" target="_blank">   
+                            <img class="github-icon footer-icon icon"  src="./static/images//gihubIcon.png" />
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/serban-deaconu-53a4bb23a/" target="_blank">
+                            <img class="linkedin-icon footer-icon icon" src="./static/images//linked-in-icon.png" />
+                        </a>
+                    </div>
+
+                    <div class="contact-canvas-container">
+                        <canvas class="contact-canvas"></canvas>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <div id="section-menu">
+        <div class="toggle-container">
+            <div class="section-toggle">
+                <div class="toggle-mark"></div>
+            </div>
+
+            <div class="section-toggle-hidden">
+                <div class="hidden-toggle-line-h"></div>
+                <div class="hidden-toggle-line-v"></div>
+            </div>
+        </div>
+        
+        <div class="toggle-container">
+            <div class="section-toggle">
+                <div class="toggle-mark"></div>
+            </div>
+
+            <div class="section-toggle-hidden">
+                <div class="hidden-toggle-line-h"></div>
+                <div class="hidden-toggle-line-v"></div>
+            </div>
+        </div>
+        
+        <div class="toggle-container">
+            <div class="section-toggle">
+                <div class="toggle-mark"></div>
+            </div>
+
+            <div class="section-toggle-hidden">
+                <div class="hidden-toggle-line-h"></div>
+                <div class="hidden-toggle-line-v"></div>
+            </div>
+        </div>
+        
+        <div class="toggle-container">
+            <div class="section-toggle">
+                <div class="toggle-mark"></div>
+            </div>
+
+            <div class="section-toggle-hidden">
+                <div class="hidden-toggle-line-h"></div>
+                <div class="hidden-toggle-line-v"></div>
+            </div>
+        </div>
+        
+        <div class="toggle-container">
+            <div class="section-toggle">
+                <div class="toggle-mark"></div>
+            </div>
+
+            <div class="section-toggle-hidden">
+                <div class="hidden-toggle-line-h"></div>
+                <div class="hidden-toggle-line-v"></div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
