@@ -23,7 +23,6 @@ import ContactScene from './WebGL/ContactScene'
 import StaticVariables from './GeneralScripts/StaticVariables'
 
 import ContactForm from './GeneralScripts/ContactForm'
-import dotenv from 'dotenv'
 
 const calculateRemUnits = () => {
     return window.innerWidth / parseFloat(
