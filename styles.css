@@ -568,6 +568,12 @@ a {
     }
 }
 
+@media (max-width: 80rem) {
+    .technology {
+        margin-bottom: 1.2rem;
+    }
+}
+
 @media (min-width: 80rem)
 {
     body {
@@ -1005,7 +1011,7 @@ a {
     }
 
     #contact-title {
-        margin-top: 10rem;
+        margin-top: 8.3rem;
     }
 }
 

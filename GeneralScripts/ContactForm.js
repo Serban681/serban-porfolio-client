@@ -71,7 +71,7 @@ export default class ContactForm {
             if(!this.validateInput())
                 return
 
-            fetch(process.env.SERVER_URL, {
+            fetch('https://ubiquitous-cemetery-production.up.railway.app/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
