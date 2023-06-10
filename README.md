@@ -2,7 +2,7 @@
 The client of my personal website.
 
 Techonologies used:
--HTML
--CSS
--JAVASCRIPT
--THREE.JS
+-HTML  
+-CSS  
+-JAVASCRIPT  
+-THREE.JS  
