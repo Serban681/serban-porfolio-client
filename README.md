@@ -1,7 +1,7 @@
 # serban-porfolio-client
 The client of my personal website.
 
-Techonologies used:
+Techonologies used:  
 -HTML  
 -CSS  
 -JAVASCRIPT  
