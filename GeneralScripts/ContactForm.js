@@ -1,6 +1,3 @@
-import FormData from "form-data";
-import Mailgun from "mailgun.js";
-
 export default class ContactForm {
     constructor() {
         this.init()
