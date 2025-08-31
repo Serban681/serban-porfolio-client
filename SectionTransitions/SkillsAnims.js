@@ -1,5 +1,5 @@
 import StaticVariables from "../GeneralScripts/StaticVariables"
-import ModelTransitionPlayer from "../WebGL/ModelTransitionPlayer"
+//import ModelTransitionPlayer from "../WebGL/ModelTransitionPlayer"
 
 export default class SkillsAnims {
     play = () => {
@@ -14,7 +14,7 @@ export default class SkillsAnims {
             this.skillSectionDecoration = document.getElementById('skill-section-decoration')
     
             this.skillSectionDecoration.style.transition = 'height 0.6s ease-in-out'
-            this.skillSectionDecoration.style.height = '3.55rem'
+            this.skillSectionDecoration.style.height = '100%'
             this.skillSectionDecoration.style.transitionDelay = '0.8s'
     
             this.skillsText = document.getElementsByClassName('skills-text')
@@ -34,15 +34,24 @@ export default class SkillsAnims {
                 this.skillNames[i].style.transform = 'scale(1)'
                 this.skillNames[i].style.transitionDelay = `${i * 0.3 + 1.4}s`
             }
-    
+
+            this.skillIcons = document.getElementsByClassName('skill-icon')
+
+            for(let i=0; i<this.skillIcons.length; i++)
+            {
+                this.skillIcons[i].style.transition = 'transform 0.3s ease-out'
+                this.skillIcons[i].style.transform = 'scale(1)'
+                this.skillIcons[i].style.transitionDelay = `${i * 0.3 + 1.4}s`
+            }
+            
             // console.log(this.skillNames[0].childNodes)
     
-            for(let i=0; i < 6; i++)
-            {
-                setTimeout(() => {
-                    ModelTransitionPlayer.startPlaying(i + 1)
-                }, (i * 0.3 + 1.4) * 1000)
-            }    
+            // for(let i=0; i < 6; i++)
+            // {
+            //     setTimeout(() => {
+            //         ModelTransitionPlayer.startPlaying(i + 1)
+            //     }, (i * 0.3 + 1.4) * 1000)
+            // }    
         }
     }
 }

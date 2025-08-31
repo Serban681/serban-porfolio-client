@@ -2,7 +2,8 @@ import * as THREE from 'three'
 import StaticVariables from '../GeneralScripts/StaticVariables'
 import TransitionFunctions from '../GeneralScripts/TransitionFunctions'
 import ModelTransitionPlayer from './ModelTransitionPlayer'
-import model from '../static/models/frontEndSymbol.glb?url'
+// import model from '../static/models/frontEndSymbol.glb?url'
+import model from '../static/models/Hero_Model.glb?url'
 
 export default class HeaderScene {
     constructor() {
@@ -51,9 +52,9 @@ export default class HeaderScene {
             model,
             (gltf) =>
             {
-                this.frontEndSymbol = gltf.scene.children[0]
+                this.frontEndSymbol = gltf.scene
                 this.scene.add(this.frontEndSymbol)
-                this.frontEndSymbol.position.set(0, 0, 3)
+                this.frontEndSymbol.position.set(0, -0.2, 3)
                 this.frontEndSymbol.rotateY(-0.5 * Math.PI)
 
                 if(StaticVariables.isMobile)
