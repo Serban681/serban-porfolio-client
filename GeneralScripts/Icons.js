@@ -20,3 +20,8 @@ export default class Icons {
         } 
     }
 }
+
+export function removeBottomSocialMediaBtnsSmallScreens () {
+    const bottomSocialMedia = document.getElementById('bottom-social-media')
+    bottomSocialMedia.classList.add('bottom-social-media-cancelation')
+}

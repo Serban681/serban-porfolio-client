@@ -160,12 +160,13 @@ a {
 
 .project-details {
     display: block;
-    height: 7.55rem;
+    height: 6.3rem;
     width: 19rem;
     /* border-left: 0.35rem solid var(--blue); */
     padding-left: 0.6rem;
     margin-left: 0.6rem;
     position: relative;
+    margin-bottom: 1rem;
 }
 
 .decoration {
@@ -202,7 +203,7 @@ a {
     color: white;
     background: var(--yellow);
     margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
     font-size: 1rem;
     padding: 0.4rem 0.8rem;
     font-weight: 500;
@@ -215,7 +216,7 @@ a {
 }
 
 .repo-btn {
-    margin: 0 0 rem;
+    margin: 0 0rem;
     background-color: var(--blue);
     margin-bottom: 2rem;
 }
@@ -248,40 +249,42 @@ a {
 .skills-models {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 3rem;
-    margin-left: 1rem;
 }
 
 .skill-container {
-    width: 4rem;
-    height: 5rem;
-    margin-bottom: 2rem;
-    transition: transform 0.3s;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
 }
 
 .skill-container:hover {
     transform: scale(1.1);
 }
 
+.skill-icon {
+    width: 3.7rem;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.15));
+    transform: scale(0);
+    margin-bottom: 1rem;
+}
+
 .skill-name {
+    font-size: 0.8rem;
     opacity: 0.7;
-    width: 10rem;
-    display: block;
-    position: absolute;
+    width: 8rem;
     bottom: -1.3rem;
     transform: scale(1);
     text-align: center;
 }
 
-.skill-icon {
-    width: 3.7rem;
-    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.15));
-    transform: scale(0);
+#fe_icon {
+    /* width: 3.7rem; */
 }
-
 
 #be_icon {
     width: 3rem;
@@ -304,7 +307,7 @@ a {
 }
 
 #fe-container {
-    left: -3rem;
+    /* left: -2.4rem; */
 }
 
 #be-container {
@@ -441,6 +444,10 @@ a {
     background-color: var(--pink);
 }
 
+.bottom-social-media-cancelation {
+    display: none;
+}
+
 @media (min-width: 40rem)
 {
     .section-container {
@@ -483,6 +490,8 @@ a {
     #projects-section {
         padding-bottom: 4rem;
     }
+
+    
 
     .live-demo-btn {
         margin-right: 1.2rem;
@@ -594,11 +603,11 @@ a {
     }
 }
 
-@media (max-width: 80rem) {
+/* @media (max-width: 80rem) {
     .technology {
         margin-bottom: 1.2rem;
     }
-}
+} */
 
 @media (min-width: 80rem)
 {
@@ -809,7 +818,7 @@ a {
     }
 
     .project-frame {
-        width: 30rem;
+        width: 25rem;
     }
 
     .project-title {
@@ -825,7 +834,7 @@ a {
     }
 
     .technology {
-        margin-top: 1rem;
+        margin-top: 0rem;
         transform: scale(0);
     }
 
@@ -874,7 +883,7 @@ a {
     }
 
     .skills-models {
-        width: 80%;
+        width: 95%;
         /* display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -963,7 +972,7 @@ a {
     }
 
     #contact-title {
-        margin-top: 3rem;
+        margin-top: 1rem;
         transform: translateX(-50vw);
     }
 
@@ -1020,6 +1029,7 @@ a {
 }
 
 @media (min-width: 100rem) {
+
     .section-container {
         margin: 0 20%;
     }
@@ -1038,6 +1048,12 @@ a {
 
     #contact-title {
         margin-top: 8.3rem;
+    }
+}
+
+@media (min-height: 44rem) {
+    .bottom-social-media-cancelation {
+        display: block;
     }
 }
 

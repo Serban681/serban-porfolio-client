@@ -14,7 +14,7 @@ export default class SkillsAnims {
             this.skillSectionDecoration = document.getElementById('skill-section-decoration')
     
             this.skillSectionDecoration.style.transition = 'height 0.6s ease-in-out'
-            this.skillSectionDecoration.style.height = '3.55rem'
+            this.skillSectionDecoration.style.height = '100%'
             this.skillSectionDecoration.style.transitionDelay = '0.8s'
     
             this.skillsText = document.getElementsByClassName('skills-text')

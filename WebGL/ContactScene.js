@@ -46,25 +46,22 @@ export default class ContactScene {
     }
 
     initLights = () => {
-        this.ambientLight = new THREE.AmbientLight(0xffffff, 0.8)
-        this.scene.add(this.ambientLight)
+        // this.ambientLight = new THREE.AmbientLight(0xffffff, 0)
+        // this.scene.add(this.ambientLight)
 
-        this.directionalLight = new THREE.DirectionalLight(0xffffff, 0.2)
-        this.directionalLight.position.set(4, 4, 3)
+        this.directionalLight = new THREE.DirectionalLight(0xffffff, 4)
+        this.directionalLight.position.set(4, 0, 3)
         this.directionalLight.target.position.set(0, -0.5, -3)
 
         this.scene.add(this.directionalLight)
-
-        // const directionalLightHelper = new THREE.DirectionalLightHelper(contactDirectionalLight, 0.6)
-        // contactScene.add(directionalLightHelper)
     }
 
     initModel = () => {
         StaticVariables.gltfLoader.load(
             model,
             (gltf) => {
-                this.model = gltf.scene.children[0]
-                this.model.rotateX(-Math.PI * 0.12)
+                this.model = gltf.scene
+                this.model.rotateY(-Math.PI * 0.1)
                 this.model.position.set(0, -0.5, -3)
 
                 if(StaticVariables.isMobile)

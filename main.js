@@ -3,7 +3,7 @@ import * as THREE from 'three'
 // import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
 import Buttons from "./GeneralScripts/Buttons"
-import Icons from "./GeneralScripts/Icons"
+import Icons, { removeBottomSocialMediaBtnsSmallScreens } from "./GeneralScripts/Icons"
 
 import ScrollMechanic from "./GeneralScripts/ScrollMechanic"
 import ToggleMenu from "./GeneralScripts/ToggleMenu"
@@ -15,7 +15,7 @@ import ProjectsAnims from "./SectionTransitions/ProjectsAnims"
 import SkillsAnims from "./SectionTransitions/SkillsAnims"
 
 import HeaderScene from "./WebGL/HeaderScene"
-import TechSkill from './WebGL/TechSkill'
+// import TechSkill from './WebGL/TechSkill'
 import AboutMeScene from './WebGL/AboutMeScene'
 
 import ModelTransitionPlayer from './WebGL/ModelTransitionPlayer'
@@ -40,7 +40,7 @@ function main() {
     };
     
     StaticVariables.isMobile = mobileAndTabletCheck()
-    
+
     /**
      * Header
      */
@@ -52,15 +52,15 @@ function main() {
      * Skills
      */
     
-    const skillCanvases = document.getElementsByClassName('skill-canvas')
+    // const skillCanvases = document.getElementsByClassName('skill-canvas')
     
-    const techSkills = []
+    // const techSkills = []
     
-    for(let index=0; index<6; index++)
-    {
-        techSkills[index] = new TechSkill(index, skillCanvases)
-        ModelTransitionPlayer.add(techSkills[index].sceneTransition, index + 1)
-    }
+    // for(let index=0; index<6; index++)
+    // {
+    //     techSkills[index] = new TechSkill(index, skillCanvases)
+    //     ModelTransitionPlayer.add(techSkills[index].sceneTransition, index + 1)
+    // }
     
     /**
      * About Me
@@ -82,7 +82,7 @@ function main() {
         contactScene = new ContactScene()
         ModelTransitionPlayer.add(contactScene.sceneTransition, contactScene.id)
     }
-    
+
     /**
      * Resize
      */
@@ -101,6 +101,14 @@ function main() {
     
     const clock = new THREE.Clock()
     let previousTime = 0
+
+    document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+            clock.stop();
+        } else {
+            clock.start();
+        }
+    });
     
     const tick = () =>
     {
@@ -113,11 +121,11 @@ function main() {
         headerScene.render()
     
     
-        for(const el of techSkills)
-        {
-            el.render()
-            el.animate(elapsedTime)
-        }
+        // for(const el of techSkills)
+        // {
+        //     el.render()
+        //     el.animate(elapsedTime)
+        // }
     
         aboutMeScene.render()
         aboutMeScene.animate(deltaTime)
@@ -213,6 +221,8 @@ function main() {
         contactBtn.addEventListener('click', () => {
             scrollMechanic.scrollTo(4, introAnims, true)
         })
+
+        removeBottomSocialMediaBtnsSmallScreens()
     }
     
     // Contact Form logic
@@ -221,4 +231,3 @@ function main() {
 }
 
 window.onload = main()
-
