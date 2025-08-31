@@ -52,11 +52,6 @@ export default class SkillsAnims {
             //         ModelTransitionPlayer.startPlaying(i + 1)
             //     }, (i * 0.3 + 1.4) * 1000)
             // }    
-        } else {
-            for(let i=0; i<this.skillIcons.length; i++)
-            {
-                this.skillIcons[i].style.transform = 'scale(1)'
-            }
         }
     }
 }

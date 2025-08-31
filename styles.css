@@ -275,7 +275,6 @@ a {
 .skill-icon {
     width: 3.7rem;
     filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.15));
-    transform: scale(0);
     margin-bottom: 1rem;
 }
 
@@ -894,6 +893,10 @@ a {
         justify-content: space-around;
         flex-wrap: wrap;
         margin-top: 3rem; */
+    }
+
+    .skill-icon {
+        transform: scale(0);
     }
 
     .skills-text {
