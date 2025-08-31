@@ -43,26 +43,26 @@ export default class projectsAnims {
             {
                 this.firstProjectBtns[i].style.transition = 'transform 0.3s ease-out'
                 this.firstProjectBtns[i].style.transform = 'scale(1)'
-                this.firstProjectBtns[i].style.transitionDelay = `${i * 0.3 + 2}s`
+                this.firstProjectBtns[i].style.transitionDelay = `${i * 0.3 + 3.2}s`
             }
     
             this.secondProjectTitle = document.getElementById('second-project-title')
     
             this.secondProjectTitle.style.transition = 'transform 0.3s ease-out'
             this.secondProjectTitle.style.transform = 'scale(1)'
-            this.secondProjectTitle.style.transitionDelay = '2.6s'
+            this.secondProjectTitle.style.transitionDelay = '3.8s'
     
             this.secondProjectDescription = document.getElementById('second-project-description')
     
             this.secondProjectDescription.style.transition = 'transform 0.3s ease-out'
             this.secondProjectDescription.style.transform = 'scale(1)'
-            this.secondProjectDescription.style.transitionDelay = '2.9s'
+            this.secondProjectDescription.style.transitionDelay = '4.1s'
     
             this.secondProjectDecoration = document.getElementById('second-project-decoration')
     
             this.secondProjectDecoration.style.transition = 'height 0.6s ease-in-out'
             this.secondProjectDecoration.style.height = '6.3rem'
-            this.secondProjectDecoration.style.transitionDelay = '2.6s'
+            this.secondProjectDecoration.style.transitionDelay = '3.8s'
     
             this.secondProjectTechnologies = document.getElementsByClassName('second-project-technology')
     
@@ -70,7 +70,7 @@ export default class projectsAnims {
             {
                 this.secondProjectTechnologies[i].style.transition = 'transform 0.3s ease-out'
                 this.secondProjectTechnologies[i].style.transform = 'scale(1)'
-                this.secondProjectTechnologies[i].style.transitionDelay = `${i * 0.3 + 3.2}s`
+                this.secondProjectTechnologies[i].style.transitionDelay = `${i * 0.3 + 4.4}s`
             }
     
             this.secondProjectBtns = document.getElementsByClassName('second-project-btn')
@@ -79,7 +79,7 @@ export default class projectsAnims {
             {
                 this.secondProjectBtns[i].style.transition = 'transform 0.3s ease-out'
                 this.secondProjectBtns[i].style.transform = 'scale(1)'
-                this.secondProjectBtns[i].style.transitionDelay = `${i * 0.3 + 4.1}s`
+                this.secondProjectBtns[i].style.transitionDelay = `${i * 0.3 + 5.3}s`
             }    
         }
     }

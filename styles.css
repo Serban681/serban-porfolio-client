@@ -210,6 +210,12 @@ a {
     margin-left: 1.2rem;
 }
 
+@media (max-width: 40rem) {
+    #removable-tech {
+        display: none;
+    }
+}
+
 .live-demo-btn {
     margin: 0 0 1.1rem;
     background-color: var(--pink);
