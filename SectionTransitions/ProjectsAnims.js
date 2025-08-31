@@ -2,8 +2,6 @@ import StaticVariables from "../GeneralScripts/StaticVariables"
 
 export default class projectsAnims {
     play = () => {
-        console.log('yep')
-
         if(!StaticVariables.isMobile)
         {
             this.projectsTitle = document.getElementById('projects-section-title')

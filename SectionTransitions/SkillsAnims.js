@@ -3,6 +3,8 @@ import StaticVariables from "../GeneralScripts/StaticVariables"
 
 export default class SkillsAnims {
     play = () => {
+        this.skillIcons = document.getElementsByClassName('skill-icon')
+
         if(!StaticVariables.isMobile)
         {
             this.skillsSectionTitle = document.getElementById('skills-title')
@@ -35,8 +37,6 @@ export default class SkillsAnims {
                 this.skillNames[i].style.transitionDelay = `${i * 0.3 + 1.4}s`
             }
 
-            this.skillIcons = document.getElementsByClassName('skill-icon')
-
             for(let i=0; i<this.skillIcons.length; i++)
             {
                 this.skillIcons[i].style.transition = 'transform 0.3s ease-out'
@@ -52,6 +52,11 @@ export default class SkillsAnims {
             //         ModelTransitionPlayer.startPlaying(i + 1)
             //     }, (i * 0.3 + 1.4) * 1000)
             // }    
+        } else {
+            for(let i=0; i<this.skillIcons.length; i++)
+            {
+                this.skillIcons[i].style.transform = 'scale(1)'
+            }
         }
     }
 }
