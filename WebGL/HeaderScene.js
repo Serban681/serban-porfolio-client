@@ -25,7 +25,7 @@ export default class HeaderScene {
 
     animate = (elapsedTime) => {
         if(this.frontEndSymbol)
-            this.frontEndSymbol.rotation.y = elapsedTime * 0.5
+            this.frontEndSymbol.rotation.y = elapsedTime * 0.5 - 1.2
     } 
 
     resize = () => {
