@@ -888,7 +888,7 @@ a {
     }
 
     .skills-models {
-        width: 95%;
+        max-width: 60rem;
     }
 
     .skill-icon {
@@ -1045,7 +1045,7 @@ a {
 
     .skills-models {
         margin-left: -1rem;
-       width: 85%;
+       width: 100%;
     }
 
     #contact-btn {
