@@ -889,10 +889,6 @@ a {
 
     .skills-models {
         width: 95%;
-        /* display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-top: 3rem; */
     }
 
     .skill-icon {
@@ -1041,6 +1037,15 @@ a {
 
     .section-container {
         margin: 0 20%;
+    }
+
+    .project-frame {
+        width: 30rem;
+    }
+
+    .skills-models {
+        margin-left: -1rem;
+       width: 85%;
     }
 
     #contact-btn {
