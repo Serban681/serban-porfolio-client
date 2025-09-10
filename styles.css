@@ -260,6 +260,10 @@ a {
     margin-top: 3rem;
 }
 
+.skills-text-container {
+    padding-left: 0.6rem;
+}
+
 .skill-container {
     display: flex;
     justify-content: center;
